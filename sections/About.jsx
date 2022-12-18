@@ -36,6 +36,7 @@ const About = () => (
         the madness of the metaverse by scrolling down
       </motion.p>
 
+      {/* https://github.com/vercel/next.js/discussions/37001 */}
       <motion.img
         variants={fadeIn('up', 'tween', 0.3, 1)}
         src="/arrow-down.svg"
