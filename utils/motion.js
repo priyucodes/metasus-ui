@@ -46,7 +46,7 @@ export const staggerContainer = (staggerChildren, delayChildren) => ({
   },
 });
 
-export const textVariant = (delay) => ({
+export const textVariant = delay => ({
   hidden: {
     y: 50,
     opacity: 0,
@@ -106,7 +106,7 @@ export const fadeIn = (direction, type, delay, duration) => ({
   },
 });
 
-export const planetVariants = (direction) => ({
+export const planetVariants = direction => ({
   hidden: {
     x: direction === 'left' ? '-100%' : '100%',
     rotate: 120,
