@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import Link from 'next/link';
+// import Link from 'next/link';
 
 import styles from '../styles';
 import { slideIn, staggerContainer, textVariant } from '../utils/motion';
@@ -44,8 +44,11 @@ const Hero = () => (
           className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
           alt="cover"
         />
-
-        <Link href="#explore">
+        {/* https://nextjs.org/docs/api-reference/next/link */}
+        {/* https://stackoverflow.com/questions/71398373/next-js-is-it-possible-to-scroll-to-an-id-on-the-page-without-changing-the-url */}
+        {/* Cannot find to add that smooth scroll to section ID(#) without messing up with router or vanilla js in useEffect */}
+        {/* <Link href="#explore" scroll={false} passHref> */}
+        <a href="#explore">
           <div className="w-full flex justify-end sm:-mt-[70px] -mt-[50px] pr-[40px] relative z-10">
             <Image
               src="/stamp.png"
@@ -55,7 +58,7 @@ const Hero = () => (
               height={155}
             />
           </div>
-        </Link>
+        </a>
       </motion.div>
     </motion.div>
   </section>
