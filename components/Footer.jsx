@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import styles from '../styles';
 import { footerVariants } from '../utils/motion';
 import { socials } from '../constants';
+
 const Footer = () => (
   <motion.footer
     variants={footerVariants}
@@ -44,7 +45,7 @@ const Footer = () => (
             Copyright © 2021 - 2022 Metaversus. All rights reserved.
           </p>
           <div className="flex gap-4">
-            {socials.map(social => (
+            {socials.map((social) => (
               <img
                 key={social.name}
                 src={social.url}
